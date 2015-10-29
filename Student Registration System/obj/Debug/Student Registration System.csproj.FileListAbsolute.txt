@@ -1,0 +1,10 @@
+C:\Users\unum\Desktop\Project\Student Registration System\Student Registration System\bin\Debug\Student Registration System.exe.config
+C:\Users\unum\Desktop\Project\Student Registration System\Student Registration System\bin\Debug\Student Registration System.exe
+C:\Users\unum\Desktop\Project\Student Registration System\Student Registration System\bin\Debug\Student Registration System.pdb
+C:\Users\unum\Desktop\Project\Student Registration System\Student Registration System\obj\Debug\Student Registration System.csprojResolveAssemblyReference.cache
+C:\Users\unum\Desktop\Project\Student Registration System\Student Registration System\obj\Debug\Student_Registration_System.Properties.Resources.resources
+C:\Users\unum\Desktop\Project\Student Registration System\Student Registration System\obj\Debug\Student_Registration_System.studentRegistrationMenu.resources
+C:\Users\unum\Desktop\Project\Student Registration System\Student Registration System\obj\Debug\Student Registration System.csproj.GenerateResource.Cache
+C:\Users\unum\Desktop\Project\Student Registration System\Student Registration System\obj\Debug\Student Registration System.exe
+C:\Users\unum\Desktop\Project\Student Registration System\Student Registration System\obj\Debug\Student Registration System.pdb
+C:\Users\unum\Desktop\Project\Student Registration System\Student Registration System\obj\Debug\Student_Registration_System.createAccount.resources
