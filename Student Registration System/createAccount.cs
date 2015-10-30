@@ -19,8 +19,16 @@ namespace Student_Registration_System
 
         private void checkCredentials_Click(object sender, EventArgs e)
         {
-            Session s = new Session();
-            s.sendCredentials(appNum.Text);
+            CreateAccountController ctr = new CreateAccountController();
+            ctr.create();
+            ctr.checkCredentials(appNum.Text);
+            string tmp = ctr.getAppNum();
+
+            if (tmp.Equals(appNum.Text)) ;
+            {
+
+            }
+
         }
 
         private void appNum_TextChanged(object sender, EventArgs e)
