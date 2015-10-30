@@ -71,6 +71,7 @@
             this.Controls.Add(this.startCreateAccount);
             this.Name = "studentRegistrationMenu";
             this.Text = "studentRegistrationMenu";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
             this.PerformLayout();
 

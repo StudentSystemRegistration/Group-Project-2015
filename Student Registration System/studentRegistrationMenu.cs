@@ -19,15 +19,16 @@ namespace Student_Registration_System
 
         private void startCreateAccount_Click(object sender, EventArgs e)
         {
+
             // Hide Registration Menu Window
             this.Hide();
-            // Create and createAccount window
-            createAccount newUser = new createAccount();
-            newUser.ShowDialog();
+            // Creates a Session
+            Session s = new Session();
+            // Starts the CreateAccountController which opens createAccount window
+            s.loadCreateAccountCtr();
             // Close Registration Menu window
             this.Close();
-
-
+       
         }
     }
 }
