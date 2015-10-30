@@ -22,6 +22,8 @@ namespace Student_Registration_System
         string courseId = "";
         string appNum = "";
 
+        
+
         // Start the New Student Dialogue
         public void start()
         {
@@ -38,10 +40,8 @@ namespace Student_Registration_System
         // Display Student Details Form
         public void displayStudent()
         {
-
             StudentDetails sd = new StudentDetails();
             sd.ShowDialog();
-
         }
 
         // Check if the application number exists
@@ -60,11 +60,6 @@ namespace Student_Registration_System
 
         }
 
-        public string getAppNum()
-        {
-            return appNum;
-        }
-
         public void createStudent()
         {
              s = new Student(appNum, name, address, courseId, dob, phoneNo, password);
@@ -76,6 +71,7 @@ namespace Student_Registration_System
         {
             return s;
         }
+
 
 
 

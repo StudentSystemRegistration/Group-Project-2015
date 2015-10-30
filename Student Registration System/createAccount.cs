@@ -21,8 +21,7 @@ namespace Student_Registration_System
         {
             CreateAccountController ctr = new CreateAccountController();
             ctr.create();
-            System.Windows.Forms.MessageBox.Show(appNum.Text);
-            this.Hide();
+            this.Hide();    
             ctr.checkCredentials(appNum.Text);
             this.Close();
             
@@ -43,6 +42,11 @@ namespace Student_Registration_System
             studentReturn.ShowDialog();
             // Close Login window
             this.Close();
+        }
+
+        private void createAccount_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
