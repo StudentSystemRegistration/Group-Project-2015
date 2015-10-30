@@ -12,16 +12,38 @@ namespace Student_Registration_System
 {
     public partial class StudentDetails : Form
     {
-        private string[] studentInfo = new string[7];
-
         public StudentDetails()
         {
             InitializeComponent();
         }
 
-        private void StudentDetails_Load(object sender, EventArgs e)
+        private void displayUserName_TextChanged(object sender, EventArgs e)
         {
-          //  studentInfo[0] = 
+            displayUserName.Text += "Hello";
+        }
+
+        private void displayName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void displayAddress_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void displayCourseId_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void displayDoB_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void displayPhoneNo_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

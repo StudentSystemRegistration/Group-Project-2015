@@ -22,6 +22,8 @@ namespace Student_Registration_System
         string courseId = "";
         string appNum = "";
 
+        
+
         // Start the New Student Dialogue
         public void start()
         {
@@ -60,11 +62,6 @@ namespace Student_Registration_System
 
         }
 
-        public string getAppNum()
-        {
-            return appNum;
-        }
-
         public void createStudent()
         {
              s = new Student(appNum, name, address, courseId, dob, phoneNo, password);
@@ -76,6 +73,7 @@ namespace Student_Registration_System
         {
             return s;
         }
+
 
 
 
