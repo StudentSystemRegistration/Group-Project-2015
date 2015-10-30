@@ -9,6 +9,7 @@ namespace Student_Registration_System
     class Session
     {
         private CreateAccountController ctr;
+        private string applicationNo = "";
 
         public void loadCreateAccountCtr()
         {
@@ -22,7 +23,8 @@ namespace Student_Registration_System
 
         public void sendCredentials(string appNum)
         {
-            ctr.checkCredentials(appNum);
+            this.applicationNo = appNum;
+            ctr.checkCredentials(applicationNo);
         }
 
 

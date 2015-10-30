@@ -17,7 +17,7 @@ namespace Student_Registration_System
             InitializeComponent();
         }
 
-        private void startCreateAccount_Click(object sender, EventArgs e)
+        public void startCreateAccount_Click(object sender, EventArgs e)
         {
 
             // Hide Registration Menu Window

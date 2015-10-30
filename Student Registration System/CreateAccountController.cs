@@ -9,7 +9,17 @@ namespace Student_Registration_System
     class CreateAccountController
     {
         private ExternalSystem c;
+        private Student s;
+
+
         private string[] studentDetails = new string[6];
+        string name = "";
+        string address = "";
+        string password = "";
+        string dob = "";
+        string phoneNo = "";
+        string courseId = "";
+        string appNum = "";
 
         // Start the New Student Dialogue
         public void start()
@@ -35,12 +45,23 @@ namespace Student_Registration_System
         public void checkCredentials(string appNum)
         {
             studentDetails = c.getInfo(appNum);
+            this.appNum = studentDetails[0];
+            this.name = studentDetails[1];
+            this.address = studentDetails[2];
+            this.courseId = studentDetails[3];
+            this.dob = studentDetails[4];
+            this.phoneNo = studentDetails[5];
 
-            // If data exists, then call next window to display data
-            if(studentDetails[0] != "")
-            {
-                displayStudent();
-            }
+        }
+
+        public string getAppNum()
+        {
+            return appNum;
+        }
+
+        public void createStudent()
+        {
+             s = new Student(appNum, name, address, courseId, dob, phoneNo, password);
         }
 
     }

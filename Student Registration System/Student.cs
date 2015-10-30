@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Student_Registration_System.Sessions
+namespace Student_Registration_System
 {
     class Student
     {
@@ -20,15 +20,15 @@ namespace Student_Registration_System.Sessions
         private string[] studentData = new string[7];
 
         // and pass in data
-        public Student(string appNo, string name, string address, string password, string courseId, string dob, string phoneNo)
+        public Student(string appNo, string name, string address, string courseId, string dob, string phoneNo, string password)
         {
             this.setAppNo(appNo);
             this.setName(name);
             this.setAddress(address);
-            this.setPassword(password);
             this.setCourseId(courseId);
             this.setDob(dob);
             this.setPhoneNo(phoneNo);
+            this.setPassword(password);
         }
 
         // Setters
@@ -50,28 +50,28 @@ namespace Student_Registration_System.Sessions
             this.studentData[2] = a;
         }
 
-        public void setPassword(string p)
-        {
-            this.password = p;
-            this.studentData[3] = p;
-        }
-
         public void setCourseId(string id)
         {
             this.courseId = id;
-            this.studentData[4] = id;
+            this.studentData[3] = id;
         }
 
         private void setDob(string d)
         {
             this.dob = d;
-            this.studentData[5] = d;
+            this.studentData[4] = d;
         }
 
         public void setPhoneNo(string n)
         {
             this.phoneNo = n;
-            this.studentData[6] = n;
+            this.studentData[5] = n;
+        }
+
+        public void setPassword(string p)
+        {
+            this.password = p;
+            this.studentData[6] = p;
         }
 
         // Get Student Data Collection
