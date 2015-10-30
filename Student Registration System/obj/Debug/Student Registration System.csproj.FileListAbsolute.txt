@@ -8,3 +8,14 @@ C:\Users\unum\Desktop\Project\Student Registration System\Student Registration S
 C:\Users\unum\Desktop\Project\Student Registration System\Student Registration System\obj\Debug\Student Registration System.exe
 C:\Users\unum\Desktop\Project\Student Registration System\Student Registration System\obj\Debug\Student Registration System.pdb
 C:\Users\unum\Desktop\Project\Student Registration System\Student Registration System\obj\Debug\Student_Registration_System.createAccount.resources
+C:\Users\unum\Documents\GitHub\Group-Project-2015\Student Registration System\bin\Debug\Student Registration System.exe.config
+C:\Users\unum\Documents\GitHub\Group-Project-2015\Student Registration System\obj\Debug\Student Registration System.exe
+C:\Users\unum\Documents\GitHub\Group-Project-2015\Student Registration System\obj\Debug\Student Registration System.pdb
+C:\Users\unum\Documents\GitHub\Group-Project-2015\Student Registration System\bin\Debug\Student Registration System.exe
+C:\Users\unum\Documents\GitHub\Group-Project-2015\Student Registration System\bin\Debug\Student Registration System.pdb
+C:\Users\unum\Documents\GitHub\Group-Project-2015\Student Registration System\obj\Debug\Student Registration System.csprojResolveAssemblyReference.cache
+C:\Users\unum\Documents\GitHub\Group-Project-2015\Student Registration System\obj\Debug\Student_Registration_System.createAccount.resources
+C:\Users\unum\Documents\GitHub\Group-Project-2015\Student Registration System\obj\Debug\Student_Registration_System.Properties.Resources.resources
+C:\Users\unum\Documents\GitHub\Group-Project-2015\Student Registration System\obj\Debug\Student_Registration_System.studentRegistrationMenu.resources
+C:\Users\unum\Documents\GitHub\Group-Project-2015\Student Registration System\obj\Debug\Student Registration System.csproj.GenerateResource.Cache
+C:\Users\unum\Documents\GitHub\Group-Project-2015\Student Registration System\obj\Debug\Student_Registration_System.StudentDetails.resources

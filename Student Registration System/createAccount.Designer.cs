@@ -82,6 +82,7 @@
             this.Controls.Add(this.label1);
             this.Name = "createAccount";
             this.Text = "createAccount";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
             this.PerformLayout();
 

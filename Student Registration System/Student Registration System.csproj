@@ -50,8 +50,18 @@
     <Compile Include="createAccount.Designer.cs">
       <DependentUpon>createAccount.cs</DependentUpon>
     </Compile>
+    <Compile Include="CreateAccountController.cs" />
+    <Compile Include="ExternalSystem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Session.cs" />
+    <Compile Include="Student.cs" />
+    <Compile Include="StudentDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentDetails.Designer.cs">
+      <DependentUpon>StudentDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="studentRegistrationMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +80,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="StudentDetails.resx">
+      <DependentUpon>StudentDetails.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="studentRegistrationMenu.resx">
       <DependentUpon>studentRegistrationMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -86,9 +99,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
