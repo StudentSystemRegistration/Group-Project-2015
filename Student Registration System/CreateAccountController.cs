@@ -40,10 +40,8 @@ namespace Student_Registration_System
         // Display Student Details Form
         public void displayStudent()
         {
-
             StudentDetails sd = new StudentDetails();
             sd.ShowDialog();
-
         }
 
         // Check if the application number exists

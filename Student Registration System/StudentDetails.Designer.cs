@@ -100,7 +100,6 @@
             // 
             this.displayUserName.Location = new System.Drawing.Point(107, 36);
             this.displayUserName.Name = "displayUserName";
-            this.displayUserName.ReadOnly = true;
             this.displayUserName.Size = new System.Drawing.Size(133, 20);
             this.displayUserName.TabIndex = 6;
             this.displayUserName.TextChanged += new System.EventHandler(this.displayUserName_TextChanged);

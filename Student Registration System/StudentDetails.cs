@@ -17,9 +17,9 @@ namespace Student_Registration_System
             InitializeComponent();
         }
 
-        private void displayUserName_TextChanged(object sender, EventArgs e)
+        public void displayUserName_TextChanged(object sender, EventArgs e)
         {
-            displayUserName.Text += "Hello";
+            
         }
 
         private void displayName_TextChanged(object sender, EventArgs e)
