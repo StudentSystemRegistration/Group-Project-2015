@@ -12,6 +12,8 @@ namespace Student_Registration_System
 {
     public partial class StudentDetails : Form
     {
+        private string[] studentInfo = new string[7];
+
         public StudentDetails()
         {
             InitializeComponent();
@@ -19,6 +21,7 @@ namespace Student_Registration_System
 
         private void StudentDetails_Load(object sender, EventArgs e)
         {
+          //  studentInfo[0] = 
 
         }
     }

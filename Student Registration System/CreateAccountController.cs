@@ -10,6 +10,7 @@ namespace Student_Registration_System
     {
         private ExternalSystem c;
         private Student s;
+        private createAccount newUser;
 
 
         private string[] studentDetails = new string[6];
@@ -24,7 +25,7 @@ namespace Student_Registration_System
         // Start the New Student Dialogue
         public void start()
         {
-            createAccount newUser = new createAccount();
+            newUser = new createAccount();
             newUser.ShowDialog();
         }
 
@@ -37,8 +38,10 @@ namespace Student_Registration_System
         // Display Student Details Form
         public void displayStudent()
         {
+
             StudentDetails sd = new StudentDetails();
             sd.ShowDialog();
+
         }
 
         // Check if the application number exists
@@ -52,6 +55,9 @@ namespace Student_Registration_System
             this.dob = studentDetails[4];
             this.phoneNo = studentDetails[5];
 
+            System.Windows.Forms.MessageBox.Show(name);
+            createStudent();
+
         }
 
         public string getAppNum()
@@ -62,7 +68,17 @@ namespace Student_Registration_System
         public void createStudent()
         {
              s = new Student(appNum, name, address, courseId, dob, phoneNo, password);
+
+             displayStudent();
         }
+
+        public Student getStudent()
+        {
+            return s;
+        }
+
+
+
 
     }
 }
