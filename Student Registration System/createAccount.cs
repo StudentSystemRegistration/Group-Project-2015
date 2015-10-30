@@ -21,13 +21,11 @@ namespace Student_Registration_System
         {
             CreateAccountController ctr = new CreateAccountController();
             ctr.create();
+            System.Windows.Forms.MessageBox.Show(appNum.Text);
+            this.Hide();
             ctr.checkCredentials(appNum.Text);
-            string tmp = ctr.getAppNum();
-
-            if (tmp.Equals(appNum.Text)) ;
-            {
-
-            }
+            this.Close();
+            
 
         }
 
