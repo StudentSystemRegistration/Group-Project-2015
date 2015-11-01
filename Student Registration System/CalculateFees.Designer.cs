@@ -43,12 +43,12 @@
             this.sub4Cost = new System.Windows.Forms.TextBox();
             this.sub5Cost = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.totalCost = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // payForFees
             // 
-            this.payForFees.Location = new System.Drawing.Point(302, 287);
+            this.payForFees.Location = new System.Drawing.Point(328, 287);
             this.payForFees.Name = "payForFees";
             this.payForFees.Size = new System.Drawing.Size(75, 23);
             this.payForFees.TabIndex = 0;
@@ -122,7 +122,7 @@
             // costLabel
             // 
             this.costLabel.AutoSize = true;
-            this.costLabel.Location = new System.Drawing.Point(322, 89);
+            this.costLabel.Location = new System.Drawing.Point(348, 89);
             this.costLabel.Name = "costLabel";
             this.costLabel.Size = new System.Drawing.Size(28, 13);
             this.costLabel.TabIndex = 9;
@@ -130,7 +130,7 @@
             // 
             // sub1Cost
             // 
-            this.sub1Cost.Location = new System.Drawing.Point(302, 105);
+            this.sub1Cost.Location = new System.Drawing.Point(328, 105);
             this.sub1Cost.Name = "sub1Cost";
             this.sub1Cost.ReadOnly = true;
             this.sub1Cost.Size = new System.Drawing.Size(75, 20);
@@ -138,7 +138,7 @@
             // 
             // sub2Cost
             // 
-            this.sub2Cost.Location = new System.Drawing.Point(302, 131);
+            this.sub2Cost.Location = new System.Drawing.Point(328, 131);
             this.sub2Cost.Name = "sub2Cost";
             this.sub2Cost.ReadOnly = true;
             this.sub2Cost.Size = new System.Drawing.Size(75, 20);
@@ -146,7 +146,7 @@
             // 
             // sub3Cost
             // 
-            this.sub3Cost.Location = new System.Drawing.Point(302, 157);
+            this.sub3Cost.Location = new System.Drawing.Point(328, 157);
             this.sub3Cost.Name = "sub3Cost";
             this.sub3Cost.ReadOnly = true;
             this.sub3Cost.Size = new System.Drawing.Size(75, 20);
@@ -154,7 +154,7 @@
             // 
             // sub4Cost
             // 
-            this.sub4Cost.Location = new System.Drawing.Point(302, 183);
+            this.sub4Cost.Location = new System.Drawing.Point(328, 183);
             this.sub4Cost.Name = "sub4Cost";
             this.sub4Cost.ReadOnly = true;
             this.sub4Cost.Size = new System.Drawing.Size(75, 20);
@@ -162,7 +162,7 @@
             // 
             // sub5Cost
             // 
-            this.sub5Cost.Location = new System.Drawing.Point(302, 209);
+            this.sub5Cost.Location = new System.Drawing.Point(328, 209);
             this.sub5Cost.Name = "sub5Cost";
             this.sub5Cost.ReadOnly = true;
             this.sub5Cost.Size = new System.Drawing.Size(75, 20);
@@ -170,26 +170,26 @@
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(302, 235);
+            this.textBox6.Location = new System.Drawing.Point(328, 235);
             this.textBox6.Name = "textBox6";
             this.textBox6.ReadOnly = true;
             this.textBox6.Size = new System.Drawing.Size(75, 20);
             this.textBox6.TabIndex = 15;
             // 
-            // textBox7
+            // totalCost
             // 
-            this.textBox7.Location = new System.Drawing.Point(302, 261);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(75, 20);
-            this.textBox7.TabIndex = 16;
+            this.totalCost.Location = new System.Drawing.Point(328, 261);
+            this.totalCost.Name = "totalCost";
+            this.totalCost.ReadOnly = true;
+            this.totalCost.Size = new System.Drawing.Size(75, 20);
+            this.totalCost.TabIndex = 16;
             // 
             // CalculateFees
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(586, 461);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.totalCost);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.sub5Cost);
             this.Controls.Add(this.sub4Cost);
@@ -231,6 +231,6 @@
         private System.Windows.Forms.TextBox sub4Cost;
         private System.Windows.Forms.TextBox sub5Cost;
         private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox totalCost;
     }
 }

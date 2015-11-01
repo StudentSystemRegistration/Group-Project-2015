@@ -14,6 +14,7 @@ namespace Student_Registration_System
     {
         Subject[] subjects;
         private bool paymentStatus = false;
+        private double totalCostFee = 0;
 
         public CalculateFees(Subject[] subs)
         {
@@ -26,11 +27,21 @@ namespace Student_Registration_System
             sub4.Text = subjects[3].getTitle() + ":";
             sub5.Text = subjects[4].getTitle() + ":";
 
+            opt1.Text = "Optional Subjects:";
+
             sub1Cost.Text = subjects[0].getFee().ToString();
             sub2Cost.Text = subjects[1].getFee().ToString();
             sub3Cost.Text = subjects[2].getFee().ToString();
             sub4Cost.Text = subjects[3].getFee().ToString();
             sub5Cost.Text = subjects[4].getFee().ToString();
+
+            for(int i = 0; i < 5; i++)
+            {
+                totalCostFee += subjects[i].getFee();
+            }
+
+            totalCost.Text = totalCostFee.ToString();
+            
             
         }
 

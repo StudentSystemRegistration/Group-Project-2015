@@ -85,16 +85,16 @@ namespace Student_Registration_System
             subjects1[0] = mathematics;
             Subject programming = new Subject("Programming", 42, false, 1.0, 200);
             subjects1[1] = programming;
-            Subject computerHardware = new Subject("Computer Hardware", 42, true, 0.50, 150);
-            subjects1[2] = computerHardware;
-            Subject networking = new Subject("Networking", 42, true, 0.50, 100);
-            subjects1[3] = networking;
             Subject applications = new Subject("Applications", 42, false, 0.50, 150);
-            subjects1[4] = applications;
+            subjects1[2] = applications;
             Subject operatingSystems = new Subject("Operating Systems", 42, false, 0.50, 150);
-            subjects1[5] = operatingSystems;
-            Subject webProg = new Subject("Web Programming and Databases", 42, true, 0.25, 150);
-            subjects1[6] = webProg;
+            subjects1[3] = operatingSystems;
+            Subject webProg = new Subject("Web Prog and Databases", 42, true, 0.25, 150);
+            subjects1[4] = webProg;
+            Subject computerHardware = new Subject("Computer Hardware", 42, true, 0.50, 150);
+            subjects1[5] = computerHardware;
+            Subject networking = new Subject("Networking", 42, true, 0.50, 100);
+            subjects1[6] = networking;
 
             /// <summary>
             /// Create 2nd set of subjects for 2nd stage
