@@ -108,7 +108,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "HomeScreen";
-            this.Text = "Student Registration System";
+            this.Text = "SRS Home Screen";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);

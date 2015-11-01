@@ -201,7 +201,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "StageDetailsScreen";
-            this.Text = "Student Registration System";
+            this.Text = "SRS Student Registration";
             this.Load += new System.EventHandler(this.StageDetailsScreen_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

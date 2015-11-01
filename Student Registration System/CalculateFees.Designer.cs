@@ -206,7 +206,7 @@
             this.Controls.Add(this.sub1);
             this.Controls.Add(this.payForFees);
             this.Name = "CalculateFees";
-            this.Text = "CalculateFees";
+            this.Text = "SRS Pay Fees";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.CalculateFees_Load);
             this.ResumeLayout(false);

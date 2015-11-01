@@ -258,7 +258,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "StudentInfoScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "StudentInfoScreen";
+            this.Text = "SRS Student Information";
             this.Load += new System.EventHandler(this.StudentInfoScreen_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
