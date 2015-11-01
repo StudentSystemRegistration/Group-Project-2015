@@ -1,21 +1,28 @@
-C:\Users\unum\Desktop\Project\Student Registration System\Student Registration System\bin\Debug\Student Registration System.exe.config
-C:\Users\unum\Desktop\Project\Student Registration System\Student Registration System\bin\Debug\Student Registration System.exe
-C:\Users\unum\Desktop\Project\Student Registration System\Student Registration System\bin\Debug\Student Registration System.pdb
-C:\Users\unum\Desktop\Project\Student Registration System\Student Registration System\obj\Debug\Student Registration System.csprojResolveAssemblyReference.cache
-C:\Users\unum\Desktop\Project\Student Registration System\Student Registration System\obj\Debug\Student_Registration_System.Properties.Resources.resources
-C:\Users\unum\Desktop\Project\Student Registration System\Student Registration System\obj\Debug\Student_Registration_System.studentRegistrationMenu.resources
-C:\Users\unum\Desktop\Project\Student Registration System\Student Registration System\obj\Debug\Student Registration System.csproj.GenerateResource.Cache
-C:\Users\unum\Desktop\Project\Student Registration System\Student Registration System\obj\Debug\Student Registration System.exe
-C:\Users\unum\Desktop\Project\Student Registration System\Student Registration System\obj\Debug\Student Registration System.pdb
-C:\Users\unum\Desktop\Project\Student Registration System\Student Registration System\obj\Debug\Student_Registration_System.createAccount.resources
+C:\Users\unum\Documents\GitHub\Group-Project-2015\Student Registration System v2.0\Student Registration System\bin\Debug\Student Registration System.exe.config
+C:\Users\unum\Documents\GitHub\Group-Project-2015\Student Registration System v2.0\Student Registration System\bin\Debug\Student Registration System.exe
+C:\Users\unum\Documents\GitHub\Group-Project-2015\Student Registration System v2.0\Student Registration System\bin\Debug\Student Registration System.pdb
+C:\Users\unum\Documents\GitHub\Group-Project-2015\Student Registration System v2.0\Student Registration System\obj\Debug\Student Registration System.csprojResolveAssemblyReference.cache
+C:\Users\unum\Documents\GitHub\Group-Project-2015\Student Registration System v2.0\Student Registration System\obj\Debug\Student_Registration_System.AuthScreen.resources
+C:\Users\unum\Documents\GitHub\Group-Project-2015\Student Registration System v2.0\Student Registration System\obj\Debug\Student_Registration_System.HomeScreen.resources
+C:\Users\unum\Documents\GitHub\Group-Project-2015\Student Registration System v2.0\Student Registration System\obj\Debug\Student_Registration_System.Properties.Resources.resources
+C:\Users\unum\Documents\GitHub\Group-Project-2015\Student Registration System v2.0\Student Registration System\obj\Debug\Student_Registration_System.SessionScreen.resources
+C:\Users\unum\Documents\GitHub\Group-Project-2015\Student Registration System v2.0\Student Registration System\obj\Debug\Student_Registration_System.StageDetailsScreen.resources
+C:\Users\unum\Documents\GitHub\Group-Project-2015\Student Registration System v2.0\Student Registration System\obj\Debug\Student_Registration_System.StudentInfoScreen.resources
+C:\Users\unum\Documents\GitHub\Group-Project-2015\Student Registration System v2.0\Student Registration System\obj\Debug\Student Registration System.csproj.GenerateResource.Cache
+C:\Users\unum\Documents\GitHub\Group-Project-2015\Student Registration System v2.0\Student Registration System\obj\Debug\Student Registration System.exe
+C:\Users\unum\Documents\GitHub\Group-Project-2015\Student Registration System v2.0\Student Registration System\obj\Debug\Student Registration System.pdb
+C:\Users\unum\Documents\GitHub\Group-Project-2015\Student Registration System v2.0\Student Registration System\obj\Debug\Student_Registration_System.CalculateFees.resources
 C:\Users\unum\Documents\GitHub\Group-Project-2015\Student Registration System\bin\Debug\Student Registration System.exe.config
 C:\Users\unum\Documents\GitHub\Group-Project-2015\Student Registration System\obj\Debug\Student Registration System.exe
 C:\Users\unum\Documents\GitHub\Group-Project-2015\Student Registration System\obj\Debug\Student Registration System.pdb
 C:\Users\unum\Documents\GitHub\Group-Project-2015\Student Registration System\bin\Debug\Student Registration System.exe
 C:\Users\unum\Documents\GitHub\Group-Project-2015\Student Registration System\bin\Debug\Student Registration System.pdb
 C:\Users\unum\Documents\GitHub\Group-Project-2015\Student Registration System\obj\Debug\Student Registration System.csprojResolveAssemblyReference.cache
-C:\Users\unum\Documents\GitHub\Group-Project-2015\Student Registration System\obj\Debug\Student_Registration_System.createAccount.resources
+C:\Users\unum\Documents\GitHub\Group-Project-2015\Student Registration System\obj\Debug\Student_Registration_System.AuthScreen.resources
+C:\Users\unum\Documents\GitHub\Group-Project-2015\Student Registration System\obj\Debug\Student_Registration_System.CalculateFees.resources
+C:\Users\unum\Documents\GitHub\Group-Project-2015\Student Registration System\obj\Debug\Student_Registration_System.HomeScreen.resources
 C:\Users\unum\Documents\GitHub\Group-Project-2015\Student Registration System\obj\Debug\Student_Registration_System.Properties.Resources.resources
-C:\Users\unum\Documents\GitHub\Group-Project-2015\Student Registration System\obj\Debug\Student_Registration_System.studentRegistrationMenu.resources
+C:\Users\unum\Documents\GitHub\Group-Project-2015\Student Registration System\obj\Debug\Student_Registration_System.SessionScreen.resources
+C:\Users\unum\Documents\GitHub\Group-Project-2015\Student Registration System\obj\Debug\Student_Registration_System.StageDetailsScreen.resources
+C:\Users\unum\Documents\GitHub\Group-Project-2015\Student Registration System\obj\Debug\Student_Registration_System.StudentInfoScreen.resources
 C:\Users\unum\Documents\GitHub\Group-Project-2015\Student Registration System\obj\Debug\Student Registration System.csproj.GenerateResource.Cache
-C:\Users\unum\Documents\GitHub\Group-Project-2015\Student Registration System\obj\Debug\Student_Registration_System.StudentDetails.resources

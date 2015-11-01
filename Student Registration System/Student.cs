@@ -1,85 +1,37 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/*
+Authors:    Brian Discin
+           Paul Dunne
+           Eddy Fakhry
+           Declan Murphy
+           Elvis Porebski   
+Date:       31-10-15
+Purpose:    Student Registration System
+*/
 
 namespace Student_Registration_System
 {
-    class Student
+    public class Student : Person
     {
-        // Variables of Student Collection
-        private string applicationNo = "";
-        private string name = "";
-        private string address = "";
-        private string password = "";
-        private string courseId = "";
-        private string dob = "";
-        private string phoneNo = "";
-        // Array to hold Collection to be returned
-        private string[] studentData = new string[7];
+        //  Member Variables
+        private string studentID;
 
-        // and pass in data
-        public Student(string appNo, string name, string address, string courseId, string dob, string phoneNo, string password)
+        private Account account;
+
+        //  Custom Constructor
+        public Student(string studentID)
         {
-            this.setAppNo(appNo);
-            this.setName(name);
-            this.setAddress(address);
-            this.setCourseId(courseId);
-            this.setDob(dob);
-            this.setPhoneNo(phoneNo);
-            this.setPassword(password);
+            this.studentID = studentID;
         }
 
-        // Setters
-        private void setAppNo(string appNo)
+        //  Getter Method
+        public string getStudentID()
         {
-            this.applicationNo = appNo;
-            this.studentData[0] = appNo;
+            return this.studentID;
         }
-
-        private void setName(string name)
+        //  Setter Method
+        public void setAccount(string studentID)
         {
-            this.name = name;
-            this.studentData[1] = name;
+            this.studentID = studentID;
         }
-
-        public void setAddress(string a)
-        {
-            this.address = a;
-            this.studentData[2] = a;
-        }
-
-        public void setCourseId(string id)
-        {
-            this.courseId = id;
-            this.studentData[3] = id;
-        }
-
-        private void setDob(string d)
-        {
-            this.dob = d;
-            this.studentData[4] = d;
-        }
-
-        public void setPhoneNo(string n)
-        {
-            this.phoneNo = n;
-            this.studentData[5] = n;
-        }
-
-        public void setPassword(string p)
-        {
-            this.password = p;
-            this.studentData[6] = p;
-        }
-
-        // Get Student Data Collection
-        public string[] getStudent()
-        {
-            return studentData;
-        }
-           
-        
     }
 }

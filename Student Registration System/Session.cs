@@ -1,40 +1,73 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/*
+Authors:    Brian Discin
+            Paul Dunne
+            Eddy Fakhry
+            Declan Murphy
+            Elvis Porebski   
+Date:       31-10-15
+Purpose:    Student Registration System
+*/
 
 namespace Student_Registration_System
 {
-    class Session
+    public class Session
     {
-        private CreateAccountController ctr;
-        private string applicationNo = "";
+        //  Member Variables
+        private Controller ctr = null;
+        private Account user = null;
 
-        public void loadCreateAccountCtr()
+        //  Default Constructor
+        public Session()
         {
-            // Create Controller
-            ctr = new CreateAccountController();
-            // Start Controller
-            ctr.start();
-            // Session is active
+            //startCreateAccount();
+        }
+
+        public void setAccount(Account a)
+        {
+            user = a;
+        }
+
+        //  Loads Controller for creating an account
+        public string startCreateAccount()
+        {
+            this.ctr = new CreateAccountController();
+            string userID =  ctr.start();
+
+            return userID;
+            //string userID = ctr.start();
+
+            //if(userID != null)
+            //{
+            //    //  display home screen
+            //    displayHomeScreen();
+            //}
             
         }
 
-        public void sendCredentials(string appNum)
+        //  Loads Controller to register for a stage
+        public void startRegisterStage()
         {
-            this.applicationNo = appNum;
-            ctr.checkCredentials(applicationNo);
+            this.ctr = new RegisterStageController(user);
+            ctr.start();
+
         }
 
+        public void displayHomeScreen()
+        {
+            using (HomeScreen screen = new HomeScreen())
+            {
+                System.Windows.Forms.DialogResult result = screen.ShowDialog();
+                if (result == System.Windows.Forms.DialogResult.Retry)
+                {
+                    //startRegisterStage();
+                    startCreateAccount();
+                }
 
-
-
-
-
-
-
-
-    
+                if (result == System.Windows.Forms.DialogResult.Cancel)
+                {
+                    //  Logout here
+                }
+            }
+        }
     }
 }
