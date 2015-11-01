@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.tbCurrYear = new System.Windows.Forms.TextBox();
+            this.tbCourseTitle = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.tbCourseCode = new System.Windows.Forms.TextBox();
-            this.tbCourseTitle = new System.Windows.Forms.TextBox();
-            this.tbCurrYear = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.tbNextYear = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.cbOptional = new System.Windows.Forms.CheckedListBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.cbMandatory = new System.Windows.Forms.CheckedListBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cbOptional = new System.Windows.Forms.CheckedListBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.stageBextButton = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -62,23 +62,22 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Course Details";
             // 
-            // label1
+            // tbCurrYear
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Course Code:";
+            this.tbCurrYear.Location = new System.Drawing.Point(108, 71);
+            this.tbCurrYear.Name = "tbCurrYear";
+            this.tbCurrYear.ReadOnly = true;
+            this.tbCurrYear.Size = new System.Drawing.Size(30, 20);
+            this.tbCurrYear.TabIndex = 6;
             // 
-            // label2
+            // tbCourseTitle
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 48);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Course Title";
+            this.tbCourseTitle.Location = new System.Drawing.Point(108, 45);
+            this.tbCourseTitle.Name = "tbCourseTitle";
+            this.tbCourseTitle.ReadOnly = true;
+            this.tbCourseTitle.Size = new System.Drawing.Size(345, 20);
+            this.tbCourseTitle.TabIndex = 5;
+            this.tbCourseTitle.TextChanged += new System.EventHandler(this.tbCourseTitle_TextChanged);
             // 
             // label3
             // 
@@ -97,22 +96,23 @@
             this.tbCourseCode.Size = new System.Drawing.Size(345, 20);
             this.tbCourseCode.TabIndex = 4;
             // 
-            // tbCourseTitle
+            // label2
             // 
-            this.tbCourseTitle.Location = new System.Drawing.Point(108, 45);
-            this.tbCourseTitle.Name = "tbCourseTitle";
-            this.tbCourseTitle.ReadOnly = true;
-            this.tbCourseTitle.Size = new System.Drawing.Size(345, 20);
-            this.tbCourseTitle.TabIndex = 5;
-            this.tbCourseTitle.TextChanged += new System.EventHandler(this.tbCourseTitle_TextChanged);
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 48);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(63, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Course Title";
             // 
-            // tbCurrYear
+            // label1
             // 
-            this.tbCurrYear.Location = new System.Drawing.Point(108, 71);
-            this.tbCurrYear.Name = "tbCurrYear";
-            this.tbCurrYear.ReadOnly = true;
-            this.tbCurrYear.Size = new System.Drawing.Size(30, 20);
-            this.tbCurrYear.TabIndex = 6;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(71, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Course Code:";
             // 
             // tbNextYear
             // 
@@ -136,41 +136,7 @@
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Next Stage Details";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 22);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(32, 13);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Year:";
-            // 
-            // cbOptional
-            // 
-            this.cbOptional.FormattingEnabled = true;
-            this.cbOptional.Location = new System.Drawing.Point(108, 145);
-            this.cbOptional.Name = "cbOptional";
-            this.cbOptional.Size = new System.Drawing.Size(345, 94);
-            this.cbOptional.TabIndex = 8;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 145);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(93, 13);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Optional Subjects:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 45);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(104, 13);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "Mandatory Subjects:";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // cbMandatory
             // 
@@ -181,21 +147,57 @@
             this.cbMandatory.Size = new System.Drawing.Size(345, 94);
             this.cbMandatory.TabIndex = 11;
             // 
-            // button1
+            // label6
             // 
-            this.button1.Location = new System.Drawing.Point(252, 429);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Next";
-            this.button1.UseVisualStyleBackColor = true;
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(6, 45);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(104, 13);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "Mandatory Subjects:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(6, 145);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(93, 13);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "Optional Subjects:";
+            // 
+            // cbOptional
+            // 
+            this.cbOptional.FormattingEnabled = true;
+            this.cbOptional.Location = new System.Drawing.Point(108, 145);
+            this.cbOptional.Name = "cbOptional";
+            this.cbOptional.Size = new System.Drawing.Size(345, 94);
+            this.cbOptional.TabIndex = 8;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 22);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(32, 13);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Year:";
+            // 
+            // stageBextButton
+            // 
+            this.stageBextButton.Location = new System.Drawing.Point(252, 429);
+            this.stageBextButton.Name = "stageBextButton";
+            this.stageBextButton.Size = new System.Drawing.Size(75, 23);
+            this.stageBextButton.TabIndex = 9;
+            this.stageBextButton.Text = "Next";
+            this.stageBextButton.UseVisualStyleBackColor = true;
+            this.stageBextButton.Click += new System.EventHandler(this.stageNextButton_Click);
             // 
             // StageDetailsScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 461);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.stageBextButton);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "StageDetailsScreen";
@@ -225,6 +227,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.CheckedListBox cbOptional;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button stageBextButton;
     }
 }

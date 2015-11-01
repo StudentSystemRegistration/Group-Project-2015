@@ -15,6 +15,9 @@ namespace Student_Registration_System
 {
     public partial class StageDetailsScreen : Form
     {
+
+        Subject[] subjects;
+
         public StageDetailsScreen(Course c)
         {
             InitializeComponent();
@@ -29,7 +32,7 @@ namespace Student_Registration_System
             tbCurrYear.Text = "" + currentYear;
             tbNextYear.Text = "" + nextYear;
 
-            Subject[] subjects = Program.getCourse(c.getCourseCode()).getStages()[nextYear].getSubjects();
+            subjects = Program.getCourse(c.getCourseCode()).getStages()[nextYear].getSubjects();
 
             for(int index = 0; index < subjects.Length; index++)
             {
@@ -55,6 +58,18 @@ namespace Student_Registration_System
         }
 
         private void tbCourseTitle_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void stageNextButton_Click(object sender, EventArgs e)
+        {
+            CalculateFees studentFees = new CalculateFees(subjects);
+            studentFees.Show();
+            this.Close();
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
         {
 
         }
