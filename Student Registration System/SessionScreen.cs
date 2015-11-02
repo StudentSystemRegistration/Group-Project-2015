@@ -36,6 +36,8 @@ namespace Student_Registration_System
             //  Start Create Account Use Case
             string userID = s.startCreateAccount();
 
+            this.Show();
+
             if(userID != null)
             {
                 MessageBox.Show("Account successfully created, please log in to activate it...");
@@ -55,16 +57,32 @@ namespace Student_Registration_System
 
             if(areValid(login, password))
             {
-                MessageBox.Show("Logging In..");
+                //MessageBox.Show("Logging In..");
                 this.Hide();
 
-                HomeScreen screen = new HomeScreen();
+                //  Check if student is allowed to register for next stage (passed current stage)
+                bool allowedToRegister = s.canRegister();
+
+
+                HomeScreen screen = new HomeScreen(allowedToRegister);
                 screen.ShowDialog();
 
                 switch (screen.action)
                 {
                     case "registerStage":
-                        s.startRegisterStage();
+                        
+
+
+                        bool registered = s.startRegisterStage();
+                        if (registered)
+                        {
+                            MessageBox.Show("Registration for your next academic year was successfully recorded");
+                        }
+                        else
+                        {
+                            MessageBox.Show("An error occured while registering for next stage...");
+                        }
+                        this.Close();
                         break;
                     case "topup":
                         MessageBox.Show("topup");

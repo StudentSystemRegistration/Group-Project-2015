@@ -36,6 +36,13 @@ namespace Student_Registration_System
         {
             appNbr = askForAppNbr();
 
+            //  Check if user is already registered as a student
+            if(!(Program.getAccount(appNbr) == null))
+            {
+                //  User already has an account, exit
+                return null;
+            }
+
             string[] studentInfo = checkCredentials(appNbr);
 
             while(studentInfo == null)
@@ -122,12 +129,9 @@ namespace Student_Registration_System
         {
             Course c = Program.getCourse(courseCode);
             Account a = new Account(appNbr, password);
+            a.setupEmail();
             a.setCourse(c);
 
-            //  this should be changes, store app nbr instead of object
-            //s.setAccount(a);
-
-            //  Todo: save student and account
             Program.addStudent(s);
             Program.addAccount(a);
         }

@@ -42,7 +42,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.cbOptional = new System.Windows.Forms.CheckedListBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.stageBextButton = new System.Windows.Forms.Button();
+            this.btnPickOptional = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lbSelected = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -136,15 +138,14 @@
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Next Stage Details";
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // cbMandatory
             // 
             this.cbMandatory.Enabled = false;
             this.cbMandatory.FormattingEnabled = true;
-            this.cbMandatory.Location = new System.Drawing.Point(108, 45);
+            this.cbMandatory.Location = new System.Drawing.Point(9, 61);
             this.cbMandatory.Name = "cbMandatory";
-            this.cbMandatory.Size = new System.Drawing.Size(345, 94);
+            this.cbMandatory.Size = new System.Drawing.Size(220, 214);
             this.cbMandatory.TabIndex = 11;
             // 
             // label6
@@ -159,7 +160,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 145);
+            this.label5.Location = new System.Drawing.Point(230, 45);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(93, 13);
             this.label5.TabIndex = 9;
@@ -167,11 +168,13 @@
             // 
             // cbOptional
             // 
+            this.cbOptional.CheckOnClick = true;
             this.cbOptional.FormattingEnabled = true;
-            this.cbOptional.Location = new System.Drawing.Point(108, 145);
+            this.cbOptional.Location = new System.Drawing.Point(233, 61);
             this.cbOptional.Name = "cbOptional";
-            this.cbOptional.Size = new System.Drawing.Size(345, 94);
+            this.cbOptional.Size = new System.Drawing.Size(220, 214);
             this.cbOptional.TabIndex = 8;
+            this.cbOptional.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.cbOptional_ItemCheck);
             // 
             // label4
             // 
@@ -182,32 +185,56 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Year:";
             // 
-            // stageBextButton
+            // btnPickOptional
             // 
-            this.stageBextButton.Location = new System.Drawing.Point(252, 429);
-            this.stageBextButton.Name = "stageBextButton";
-            this.stageBextButton.Size = new System.Drawing.Size(75, 23);
-            this.stageBextButton.TabIndex = 9;
-            this.stageBextButton.Text = "Next";
-            this.stageBextButton.UseVisualStyleBackColor = true;
-            this.stageBextButton.Click += new System.EventHandler(this.stageNextButton_Click);
+            this.btnPickOptional.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.btnPickOptional.Enabled = false;
+            this.btnPickOptional.Location = new System.Drawing.Point(391, 429);
+            this.btnPickOptional.Name = "btnPickOptional";
+            this.btnPickOptional.Size = new System.Drawing.Size(75, 23);
+            this.btnPickOptional.TabIndex = 9;
+            this.btnPickOptional.Text = "Next";
+            this.btnPickOptional.UseVisualStyleBackColor = true;
+            this.btnPickOptional.Click += new System.EventHandler(this.btnPickOptional_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(19, 434);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(241, 13);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "NUMBER OF OPTIONAL SUBJECT SELECTED:";
+            // 
+            // lbSelected
+            // 
+            this.lbSelected.AutoSize = true;
+            this.lbSelected.Location = new System.Drawing.Point(266, 434);
+            this.lbSelected.Name = "lbSelected";
+            this.lbSelected.Size = new System.Drawing.Size(24, 13);
+            this.lbSelected.TabIndex = 13;
+            this.lbSelected.Text = "0/3";
             // 
             // StageDetailsScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 461);
-            this.Controls.Add(this.stageBextButton);
+            this.Controls.Add(this.lbSelected);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.btnPickOptional);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "StageDetailsScreen";
-            this.Text = "SRS Student Registration";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Student Registration System";
             this.Load += new System.EventHandler(this.StageDetailsScreen_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -227,6 +254,8 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.CheckedListBox cbOptional;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button stageBextButton;
+        private System.Windows.Forms.Button btnPickOptional;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lbSelected;
     }
 }

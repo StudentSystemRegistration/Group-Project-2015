@@ -14,6 +14,9 @@ namespace Student_Registration_System
     {
         //  Member Variables
         private Account account;
+        private Subject[] subjects;
+        private int nextYear;
+        private Course c;
 
         public RegisterStageController(Account account)
         {
@@ -22,14 +25,53 @@ namespace Student_Registration_System
 
         public override string start()
         {
-            Course c = account.getCourse();
-            int nextYear = c.getNextStageID();
+            c = account.getCourse();
+            nextYear = c.getNextStageID();
 
+            //  Display new stage details and ask for optional
             StageDetailsScreen screen = new StageDetailsScreen(c);
-            screen.Show();
+
+            //  Pick Optional
+            if (screen.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                //  Set both mandatory and chosen optional subjects
+                this.subjects = screen.getSelectedSubjects();
+
+                //  Calculate fees, ask for payment and pay 
+                
+
+                PaymentScreen studentFees = new PaymentScreen(subjects);
+                if(studentFees.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    StagePayment p = new StagePayment();
+                    p.setAmount(studentFees.getTotalCost());
+
+                    registerStage(p);
+                    return "ok";
+                }
+            }
             return null;
         }
 
+        private void registerStage(StagePayment p)
+        {
+            c.progressToNextStage(nextYear, subjects, p);
+            double diskSpace = calculateDiskSpace(subjects);
+            account.setDiskSpace(diskSpace);
+            account.setCourse(c);
+            Program.updateStudentAccount(account);
+        }
 
+        private double calculateDiskSpace(Subject[] subjects)
+        {
+            double diskSpace = 0;
+
+            for(int index=0; index < subjects.Length; index++)
+            {
+                diskSpace += subjects[index].getDiskSpace();
+            }
+
+            return diskSpace;
+        }
     }
 }

@@ -65,6 +65,11 @@ namespace Student_Registration_System
         public void setLogin(string login)
         {
             this.login = login;
+            
+        }
+
+        public void setupEmail()
+        {
             this.email = this.login + "@itcarlow.ie";
         }
 

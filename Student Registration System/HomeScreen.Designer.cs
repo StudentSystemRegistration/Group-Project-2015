@@ -32,7 +32,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbCurrentTime = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -74,25 +74,25 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(209, 26);
+            this.label1.Size = new System.Drawing.Size(156, 26);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Welcome back Elvis";
+            this.label1.Text = "Welcome back";
             // 
-            // label2
+            // lbCurrentTime
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(14, 35);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(203, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Current Time: 13:34, 2nd November 2015";
+            this.lbCurrentTime.AutoSize = true;
+            this.lbCurrentTime.Location = new System.Drawing.Point(14, 35);
+            this.lbCurrentTime.Name = "lbCurrentTime";
+            this.lbCurrentTime.Size = new System.Drawing.Size(203, 13);
+            this.lbCurrentTime.TabIndex = 4;
+            this.lbCurrentTime.Text = "Current Time: 13:34, 2nd November 2015";
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.btnRS);
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.btnLogout);
-            this.groupBox1.Location = new System.Drawing.Point(104, 175);
+            this.groupBox1.Location = new System.Drawing.Point(53, 172);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(385, 95);
             this.groupBox1.TabIndex = 5;
@@ -103,13 +103,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(586, 461);
+            this.ClientSize = new System.Drawing.Size(484, 461);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lbCurrentTime);
             this.Controls.Add(this.label1);
             this.Name = "HomeScreen";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SRS Home Screen";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -122,7 +122,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbCurrentTime;
         private System.Windows.Forms.GroupBox groupBox1;
     }
 }

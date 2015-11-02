@@ -1,8 +1,14 @@
-﻿using System;
+﻿/*
+Authors:    Brian Discin
+            Paul Dunne
+            Eddy Fakhry
+            Declan Murphy
+            Elvis Porebski   
+Date:       31-10-15
+Purpose:    Student Registration System
+*/
+
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Student_Registration_System
 {

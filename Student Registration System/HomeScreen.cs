@@ -17,9 +17,16 @@ namespace Student_Registration_System
     {
         public string action = "";
 
-        public HomeScreen()
+        public HomeScreen(bool registrationEnabled)
         {
             InitializeComponent();
+
+            lbCurrentTime.Text = "Current Time: " + DateTime.Now.ToString("MM\\/dd\\/yyyy h\\:mm tt");
+
+            if (!registrationEnabled)
+            {
+                btnRS.Enabled = false;
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

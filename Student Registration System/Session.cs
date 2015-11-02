@@ -27,6 +27,23 @@ namespace Student_Registration_System
             user = a;
         }
 
+        public bool canRegister()
+        {
+            int currentYear = user.getCourse().getCurrentStageID();
+            if(currentYear == -1)
+            {
+                return true;
+            }
+            string status = user.getCourse().getStages()[currentYear].getStatus();
+
+            if(string.Equals(status, "passed"))
+            {
+                return true;
+            }
+
+            return false;
+        }
+
         //  Loads Controller for creating an account
         public string startCreateAccount()
         {
@@ -34,40 +51,20 @@ namespace Student_Registration_System
             string userID =  ctr.start();
 
             return userID;
-            //string userID = ctr.start();
-
-            //if(userID != null)
-            //{
-            //    //  display home screen
-            //    displayHomeScreen();
-            //}
-            
         }
 
         //  Loads Controller to register for a stage
-        public void startRegisterStage()
+        public bool startRegisterStage()
         {
             this.ctr = new RegisterStageController(user);
-            ctr.start();
+            string status = ctr.start();
 
-        }
-
-        public void displayHomeScreen()
-        {
-            using (HomeScreen screen = new HomeScreen())
+            if (string.Equals(status, "ok"))
             {
-                System.Windows.Forms.DialogResult result = screen.ShowDialog();
-                if (result == System.Windows.Forms.DialogResult.Retry)
-                {
-                    //startRegisterStage();
-                    startCreateAccount();
-                }
-
-                if (result == System.Windows.Forms.DialogResult.Cancel)
-                {
-                    //  Logout here
-                }
+                return true;
             }
+
+            return false;
         }
     }
 }

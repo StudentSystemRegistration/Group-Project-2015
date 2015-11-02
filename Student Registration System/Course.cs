@@ -27,7 +27,7 @@ namespace Student_Registration_System
             setCourseCode(courseCode);
             setTitle(title);
             setLevel(level);
-            setCurrentStageID(0);
+            setCurrentStageID(-1);
             setMinPoints(minPoints);
             setStages(stages);
         }
@@ -96,12 +96,16 @@ namespace Student_Registration_System
 
         public int getNextStageID()
         {
-            if(stages == null)
+            if (stages == null)
             {
                 return -1;
+            } else if(currentStage == -1)
+            {
+                return 0;
             }
-            else if(string.Equals(stages[currentStage].getStatus(), "passed")){
-                if(currentStage + 1 >= stages.Length)
+            else if (string.Equals(stages[currentStage].getStatus(), "passed"))
+            {
+                if (currentStage + 1 >= stages.Length)
                 {
                     return -1;
                 }
@@ -110,28 +114,13 @@ namespace Student_Registration_System
             return currentStage;
         }
 
-        ////todo
-
-        //// getStage
-        //public Stage getStage(int stage)
-        //{
-        //    return stages[stage - 1];
-        //}
-
-        //public int getCurrStage()
-        //{
-        //    return currentStage;
-        //}
-
-        //public void setCurrStage(int stage)
-        //{
-        //    currentStage = stage;
-        //}
-
-        //public Stage getNextStage()
-        //{
-        //    return stages[currentStage];            
-        //}
+        public void progressToNextStage(int year, Subject[] chosenSubjects, StagePayment stagePayment)
+        {
+            stages[year].setSubjects(chosenSubjects);
+            stages[year].setStagePayment(stagePayment);
+            stages[year].setStatus("current");
+            currentStage++;
+        }
     }
 }
 

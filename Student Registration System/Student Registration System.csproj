@@ -54,11 +54,11 @@
     <Compile Include="AuthScreen.Designer.cs">
       <DependentUpon>AuthScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="CalculateFees.cs">
+    <Compile Include="PaymentScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CalculateFees.Designer.cs">
-      <DependentUpon>CalculateFees.cs</DependentUpon>
+    <Compile Include="PaymentScreen.Designer.cs">
+      <DependentUpon>PaymentScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Controller.cs" />
     <Compile Include="Course.cs" />
@@ -70,6 +70,8 @@
     <Compile Include="HomeScreen.Designer.cs">
       <DependentUpon>HomeScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Payment.cs" />
+    <Compile Include="PaymentSystem.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="RegisterStageController.cs" />
     <Compile Include="Session.cs" />
@@ -87,6 +89,7 @@
     <Compile Include="StageDetailsScreen.Designer.cs">
       <DependentUpon>StageDetailsScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="StagePayment.cs" />
     <Compile Include="Student.cs" />
     <Compile Include="StudentInfoScreen.cs">
       <SubType>Form</SubType>
@@ -100,8 +103,8 @@
     <EmbeddedResource Include="AuthScreen.resx">
       <DependentUpon>AuthScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CalculateFees.resx">
-      <DependentUpon>CalculateFees.cs</DependentUpon>
+    <EmbeddedResource Include="PaymentScreen.resx">
+      <DependentUpon>PaymentScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HomeScreen.resx">
       <DependentUpon>HomeScreen.cs</DependentUpon>

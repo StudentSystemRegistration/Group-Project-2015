@@ -51,6 +51,10 @@ namespace Student_Registration_System
         //  Save Account
         public static void addAccount(Account a)
         {
+            if (accounts.ContainsKey(a.getLogin()))
+            {
+                return;
+            }
             accounts.Add(a.getLogin(), a);
         }
 
@@ -63,6 +67,11 @@ namespace Student_Registration_System
                 return account;
             }
             return null;
+        }
+
+        public static void updateStudentAccount(Account a)
+        {
+            accounts[a.getLogin()] = a;
         }
 
         /// <summary>
@@ -119,21 +128,26 @@ namespace Student_Registration_System
             /// Create a stage for the subjects
             /// </summary>
             Stage stage1 = new Stage(1, subjects1);
-            Stage stage2 = new Stage(2, subjects2);
+            stage1.setStatus("passed");
+            Stage stage2 = new Stage(1, subjects2);
 
             Stage[] stages = new Stage[4];
             stages[0] = stage1;
             stages[1] = stage2;
 
-            Course course1 = new Course("CW_KCSOF_B", "Bachelor of Science(Honours) in Software Development", "NFQ Level 8", 335, stages);
+            Course course1 = new Course("CW_KCSOF_B", "Bachelor of Science(Honours) in Software Development", "NFQ Level 8", 335, stages); 
+            course1.setCurrentStageID(-1);
+            courseCatalog.Add(course1.getCourseCode(), course1);
+
             Account account = new Account("C00170343", "1234");
             account.setBalance(0);
             account.setCourse(course1);
             account.setDiskSpace(250);
 
-            //addAccount(account);
+            //  For debugging purpose
+            addAccount(account);
 
-            courseCatalog.Add(course1.getCourseCode(), course1);
+            
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
