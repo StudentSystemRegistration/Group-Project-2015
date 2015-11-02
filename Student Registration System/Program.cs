@@ -139,7 +139,9 @@ namespace Student_Registration_System
             course1.setCurrentStageID(-1);
             courseCatalog.Add(course1.getCourseCode(), course1);
 
+
             Account account = new Account("C00170343", "1234");
+            course1.setCurrentStageID(0);
             account.setBalance(0);
             account.setCourse(course1);
             account.setDiskSpace(250);

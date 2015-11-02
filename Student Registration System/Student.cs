@@ -15,8 +15,6 @@ namespace Student_Registration_System
         //  Member Variables
         private string studentID;
 
-        private Account account;
-
         //  Custom Constructor
         public Student(string studentID)
         {

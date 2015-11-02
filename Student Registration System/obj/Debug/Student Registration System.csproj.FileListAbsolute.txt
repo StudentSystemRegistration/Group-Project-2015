@@ -26,17 +26,21 @@ C:\Users\unum\Documents\GitHub\Group-Project-2015\Student Registration System\ob
 C:\Users\unum\Documents\GitHub\Group-Project-2015\Student Registration System\obj\Debug\Student_Registration_System.StageDetailsScreen.resources
 C:\Users\unum\Documents\GitHub\Group-Project-2015\Student Registration System\obj\Debug\Student_Registration_System.StudentInfoScreen.resources
 C:\Users\unum\Documents\GitHub\Group-Project-2015\Student Registration System\obj\Debug\Student Registration System.csproj.GenerateResource.Cache
-C:\Users\Elvis\OOv2\Group-Project-2015\Student Registration System\bin\Debug\Student Registration System.exe.config
-C:\Users\Elvis\OOv2\Group-Project-2015\Student Registration System\obj\Debug\Student Registration System.exe
-C:\Users\Elvis\OOv2\Group-Project-2015\Student Registration System\obj\Debug\Student Registration System.pdb
-C:\Users\Elvis\OOv2\Group-Project-2015\Student Registration System\bin\Debug\Student Registration System.exe
-C:\Users\Elvis\OOv2\Group-Project-2015\Student Registration System\bin\Debug\Student Registration System.pdb
-C:\Users\Elvis\OOv2\Group-Project-2015\Student Registration System\obj\Debug\Student Registration System.csprojResolveAssemblyReference.cache
 C:\Users\Elvis\OOv2\Group-Project-2015\Student Registration System\obj\Debug\Student_Registration_System.AuthScreen.resources
+C:\Users\Elvis\OOv2\Group-Project-2015\Student Registration System\obj\Debug\Student_Registration_System.PaymentScreen.resources
 C:\Users\Elvis\OOv2\Group-Project-2015\Student Registration System\obj\Debug\Student_Registration_System.HomeScreen.resources
 C:\Users\Elvis\OOv2\Group-Project-2015\Student Registration System\obj\Debug\Student_Registration_System.Properties.Resources.resources
 C:\Users\Elvis\OOv2\Group-Project-2015\Student Registration System\obj\Debug\Student_Registration_System.SessionScreen.resources
 C:\Users\Elvis\OOv2\Group-Project-2015\Student Registration System\obj\Debug\Student_Registration_System.StageDetailsScreen.resources
 C:\Users\Elvis\OOv2\Group-Project-2015\Student Registration System\obj\Debug\Student_Registration_System.StudentInfoScreen.resources
 C:\Users\Elvis\OOv2\Group-Project-2015\Student Registration System\obj\Debug\Student Registration System.csproj.GenerateResource.Cache
-C:\Users\Elvis\OOv2\Group-Project-2015\Student Registration System\obj\Debug\Student_Registration_System.PaymentScreen.resources
+C:\Users\Elvis\OOv2\Group-Project-2015\Student Registration System\obj\Debug\Student Registration System.exe
+C:\Users\Elvis\OOv2\Group-Project-2015\Student Registration System\obj\Debug\Student Registration System.pdb
+C:\Users\Elvis\OOv2\Group-Project-2015\Student Registration System\bin\Debug\Student Registration System.exe.config
+C:\Users\Elvis\OOv2\Group-Project-2015\Student Registration System\bin\Debug\Student Registration System.exe.manifest
+C:\Users\Elvis\OOv2\Group-Project-2015\Student Registration System\bin\Debug\Student Registration System.application
+C:\Users\Elvis\OOv2\Group-Project-2015\Student Registration System\bin\Debug\Student Registration System.exe
+C:\Users\Elvis\OOv2\Group-Project-2015\Student Registration System\bin\Debug\Student Registration System.pdb
+C:\Users\Elvis\OOv2\Group-Project-2015\Student Registration System\obj\Debug\Student Registration System.csprojResolveAssemblyReference.cache
+C:\Users\Elvis\OOv2\Group-Project-2015\Student Registration System\obj\Debug\Student Registration System.exe.manifest
+C:\Users\Elvis\OOv2\Group-Project-2015\Student Registration System\obj\Debug\Student Registration System.application
