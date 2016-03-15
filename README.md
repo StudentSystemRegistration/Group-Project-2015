@@ -1,2 +1,3 @@
-# Group-Project-2015
-Student Registration System
+# Software Engineering Group Project
+
+- Student Registration System for college
